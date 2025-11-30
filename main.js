@@ -59,8 +59,6 @@ function WhitePawnMove (pieceLine, pieceColumn) {
     PrintTable();
 };
 
-WhitePawnMove(4, 0)
-
 function BlackPawnMove (pieceLine, pieceColumn) {
     // Adiciona 'O', para indicar que pode se mover
     if (ShowPiece(pieceLine + 1, pieceColumn) == '--') {
@@ -84,7 +82,7 @@ function BlackPawnMove (pieceLine, pieceColumn) {
 };  
 
 // Movimento Torre 
-function TowerMove(pieceLine, pieceColumn) {
+function RookMove(pieceLine, pieceColumn) {
     // Movimento para cima
     // Verifica se o movimento saiu do tabuleiro, para assim quando der erro nao quebrar o código
     try {
@@ -467,4 +465,4 @@ function QueenMove(pieceLine, pieceColumn) {
 
 function KingMove(pieceLine, pieceColumn) {
 
-}
+};
